@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: whitesmoke;
+            margin:0 20px;
+            padding:0;
+        }
+
+        h1 {
+            color:#fff;
+            background-color: rgb(72, 121, 226);
+            text-align: center;
+            font-size: 30px;
+            width: 100%;
+        }
+
+        h3{
+            color: #333;
+            font-size: 17px;
+
+        }
+        p {
+            color: #333;
+            font-size: 15px;
+            margin-top: 0;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            align-self: center;
+        }
+        th, td {
+            padding: 4px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+            font-size:13px;
+        }
+        th {
+            background-color: rgb(72, 121, 226);
+            color: #fff;
+        }
+        footer{
+            border: 3px solid  rgb(72, 121, 226);
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1><b>Monthly report</b></h1>
+    <h3>Dear {{data.full_name}},</h3>
+    <p>Your monthly report for {{ month_year }} is displayed below:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Book Name</th>
+                <th>Book Price</th>
+                <th>You Rated</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book_content in data.collection %}
+            <tr>
+                <td>{{ book_content.book_name }}</td>
+                <td>Rs. {{ book_content.book_price }}</td>
+                <td>{{ book_content.rating }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p style="margin-top: 10px;"><strong>Total:Rs. {{data.total_spending}}</strong></p>
+    <br>
+    <p>with regards,</p>
+    <p>LMS Team</p>
+    <footer></footer>
+</body>
+</html>
+
