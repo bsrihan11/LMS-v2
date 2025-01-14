@@ -40,3 +40,5 @@ This project is a web application built with Flask as the backend framework and 
 
 Once both backend and frontend servers are running, you can access the application through your web browser.
 The default URL for the frontend server is [http://localhost:8080].
+
+![alt text]([http://url/to/img.png](https://drive.google.com/file/d/1jhbil-mo0oDhbyN4hTmBEctq5vzhD5Ej/view?usp=drive_link))
