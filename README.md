@@ -41,7 +41,7 @@ This project is a web application built with Flask as the backend framework and 
 Once both backend and frontend servers are running, you can access the application through your web browser.
 The default URL for the frontend server is [http://localhost:8080].
 
-![alt text](https://drive.google.com/file/d/1jhbil-mo0oDhbyN4hTmBEctq5vzhD5Ej/view?usp=drive_link)
+## Project Snippets:
 
 ![image_1](https://github.com/user-attachments/assets/811a8693-bd90-41ec-be85-2539f39807c8)
 
@@ -49,7 +49,6 @@ The default URL for the frontend server is [http://localhost:8080].
 
 ![image_3](https://github.com/user-attachments/assets/5744b722-3721-4c00-a4d2-a0d9fa034c0d)
 
-![image_4](https://github.com/user-attachments/assets/e9b5f0d8-8808-441d-a1bd-50b6bf06bd71)
-
 ![image_5](https://github.com/user-attachments/assets/537781df-e4fe-4f93-a6e0-aa0b7713e544)
 
+![image_4](https://github.com/user-attachments/assets/e9b5f0d8-8808-441d-a1bd-50b6bf06bd71)
